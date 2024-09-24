@@ -33,22 +33,22 @@ const Unicafe = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
-  const [allClicks, setAll] = useState([]);
-  const average = allClicks.length > 0 ? (good - bad) / allClicks.length : 0;
-  const positive = allClicks.length > 0 ? (good / allClicks.length) * 100 : 0;
+  const [allPoints, setAllPoints] = useState([]);
+  const average = allPoints.length > 0 ? (good - bad) / allPoints.length : 0;
+  const positive = allPoints.length > 0 ? (good / allPoints.length) * 100 : 0;
 
   const handleGoodClick = () => {
-    setAll([...allClicks, "good"]);
+    setAllPoints([...allPoints, "good"]);
     setGood(good + 1);
   };
 
   const handleNeutralClick = () => {
-    setAll([...allClicks, "neutral"]);
+    setAllPoints([...allPoints, "neutral"]);
     setNeutral(neutral + 1);
   };
 
   const handleBadClick = () => {
-    setAll([...allClicks, "bad"]);
+    setAllPoints([...allPoints, "bad"]);
     setBad(bad + 1);
   };
 
@@ -65,7 +65,7 @@ const Unicafe = () => {
         good={good}
         neutral={neutral}
         bad={bad}
-        allClicks={allClicks}
+        allClicks={allPoints}
         average={average}
         positive={positive}
       />
