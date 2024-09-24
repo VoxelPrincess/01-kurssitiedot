@@ -1,3 +1,4 @@
+import "./Unicafe.css";
 import { useState } from "react";
 
 const Button = ({ handleClick, text }) => <button onClick={handleClick}>{text}</button>;
@@ -54,9 +55,11 @@ const Unicafe = () => {
   return (
     <div>
       <h1>Give geedback</h1>
-      <Button handleClick={handleGoodClick} text="good" />
-      <Button handleClick={handleNeutralClick} text="neutral" />
-      <Button handleClick={handleBadClick} text="bad" />
+      <div className="button-group">
+        <Button handleClick={handleGoodClick} text="good" />
+        <Button handleClick={handleNeutralClick} text="neutral" />
+        <Button handleClick={handleBadClick} text="bad" />
+      </div>
       <h2>Statistics</h2>
       <StatisticsTable
         good={good}
