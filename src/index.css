@@ -1,0 +1,20 @@
+section h1 {
+  color: red;
+}
+
+.theory {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #aeffda;
+}
+
+.task {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: #aeffda;
+}
+
+.theory h3,
+.task h3 {
+  margin-top: 0;
+}
