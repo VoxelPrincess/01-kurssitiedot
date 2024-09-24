@@ -38,17 +38,17 @@ const Unicafe = () => {
   const positive = allClicks.length > 0 ? (good / allClicks.length) * 100 : 0;
 
   const handleGoodClick = () => {
-    setAll([...allClicks, "g"]);
+    setAll([...allClicks, "good"]);
     setGood(good + 1);
   };
 
   const handleNeutralClick = () => {
-    setAll([...allClicks, "n"]);
+    setAll([...allClicks, "neutral"]);
     setNeutral(neutral + 1);
   };
 
   const handleBadClick = () => {
-    setAll([...allClicks, "b"]);
+    setAll([...allClicks, "bad"]);
     setBad(bad + 1);
   };
 
