@@ -5,7 +5,7 @@ const EventDemo = (props) => {
 
   return (
     <div>
-      {value} <button onClick={() => console.log("clicked the button")}>button</button>
+      {value} <button onClick={() => setValue(value + 1)}>button</button>
     </div>
   );
 };
