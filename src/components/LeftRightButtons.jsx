@@ -35,7 +35,7 @@ const App = () => {
   return (
     <section style={{ marginTop: "20px" }}>
       <h1 style={{ color: "darkblue" }}>
-        <b>Left and Right Buttoms</b>
+        <b>Left and Right Buttons</b>
       </h1>
       <div>
         <div className="button-group">
