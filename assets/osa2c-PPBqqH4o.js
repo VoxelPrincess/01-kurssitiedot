@@ -1,0 +1,1 @@
+import{c as s,j as e}from"./client-Cgxip4d8.js";const t=()=>e.jsxs("main",{children:[e.jsx("h1",{children:"Osa 1c Palvelimella olevan datan hakeminen"}),e.jsx("div",{className:"theory"}),e.jsx("h2",{children:"Tehtävät 2.6.-2.10."}),e.jsx("div",{className:"task"})]});s.createRoot(document.getElementById("root")).render(e.jsx(t,{}));
