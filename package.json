@@ -6,10 +6,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=./",
+    "build-ghp": "vite build --base=/01-kurssitiedot",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build-ghp",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
