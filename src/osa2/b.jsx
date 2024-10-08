@@ -1,6 +1,7 @@
 import "../index.css";
 import ReactDOM from "react-dom/client";
 import React from "react";
+import Phonebook from "../tasks_2.6_2.10/Phonebook";
 /* import ArtoComponent from "../components/ArtoComponent"; */
 
 const App = () => {
@@ -13,7 +14,9 @@ const App = () => {
 
       <h2>Tehtävät 2.6.-2.10.</h2>
 
-      <div className="task">{/*  <Kurssitiedot />  */}</div>
+      <div className="task">
+        <Phonebook />
+      </div>
     </main>
   );
 };

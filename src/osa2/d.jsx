@@ -13,9 +13,7 @@ const App = () => {
 
       <h2>Tehtävät 2.12.-2.15.</h2>
 
-      <div className="task">
-        <Unicafe />
-      </div>
+      <div className="task"></div>
     </main>
   );
 };

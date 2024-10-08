@@ -7,25 +7,17 @@ const App = () => {
     <main>
       <h1>Osa 2e Tyylien lisääminen React-sovellukseen</h1>
 
-      <div className="theory">
-        <LeftRightButtons />
-      </div>
+      <div className="theory">{/* <LeftRightButtons /> */}</div>
 
       <h2>Tehtävät 2.16.-2.17.</h2>
 
-      <div className="task">
-        <Unicafe />
-      </div>
+      <div className="task">{/* <Unicafe /> */}</div>
 
-      <div className="theory">
-        <LeftRightButtons />
-      </div>
+      <div className="theory">{/* <LeftRightButtons /> */}</div>
 
       <h2>Tehtävät 2.18.-2.20.</h2>
 
-      <div className="task">
-        <Anecdote />
-      </div>
+      <div className="task"></div>
     </main>
   );
 };

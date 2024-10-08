@@ -2,6 +2,8 @@ import "../index.css";
 import ReactDOM from "react-dom/client";
 import React from "react";
 import Theory2a from "../components/Theory2a";
+import Kurssit from "../tasks_2.1_2.5/Kurssit";
+import { courses } from "../constants";
 
 const notes = [
   {
@@ -31,7 +33,9 @@ const App = () => {
 
       <h2>Tehtävät 2.1-2.5</h2>
 
-      <div className="task">{/*  <Kurssitiedot />  */}</div>
+      <div className="task">
+        <Kurssit courses={courses} />
+      </div>
     </main>
   );
 };
