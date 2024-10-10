@@ -9,8 +9,6 @@ const App = () => {
     <main>
       <h1>Osa 2e Tyylien lisääminen React-sovellukseen</h1>
 
-      <div className="theory">{/* <LeftRightButtons /> */}</div>
-
       <h2>Tehtävät 2.16.-2.17.</h2>
 
       <div className="task">

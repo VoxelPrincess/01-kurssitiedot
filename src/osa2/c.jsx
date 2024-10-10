@@ -10,10 +10,6 @@ const App = () => {
     <main>
       <h1>Osa 2c Palvelimella olevan datan hakeminen</h1>
 
-      <div className="theory">
-        <Theory2c />
-      </div>
-
       <h2>Tehtävät 2.11.</h2>
 
       <div className="task">

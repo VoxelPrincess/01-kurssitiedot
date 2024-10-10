@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Country from "./Country";
 import CountrySimple from "./CountrySimple";
 
@@ -6,11 +6,13 @@ const Countries = ({ countries, newSearch }) => {
   const [showCountry, setShowContry] = useState();
 
   const show = (event) => {
-    console.log(event.target.value);
-    const cont = countries.filter((country) => country.name.common.includes(event.target.value));
-    console.log("cont: ", cont);
-    setShowContry(cont[0]);
+    const result = countries.filter((country) => country.name.common.includes(event.target.value));
+    setShowContry(result[0]);
   };
+
+  useEffect(() => {
+    setShowContry(undefined);
+  }, [newSearch]);
 
   const entries = countries.filter((country) => country.name.common.toUpperCase().includes(newSearch.toUpperCase()));
 
