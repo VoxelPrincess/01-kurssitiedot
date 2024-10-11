@@ -54,7 +54,7 @@ const Countries = ({ countries, newSearch }) => {
             capital={country.capital}
             population={country.population}
             languages={country.languages}
-            flagUrl={country.flag}
+            flagUrl={country.flags.png}
           />
         ))}
     </ul>
